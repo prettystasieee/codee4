@@ -1,0 +1,408 @@
+/* Сброс */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Основные настройки */
+
+body{
+
+    background:#052f08;
+    color:white;
+
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+/* ссылки */
+
+a{
+
+    text-decoration:none;
+    color:white;
+
+}
+
+/* картинки */
+
+img{
+
+    max-width:100%;
+    display:block;
+
+}
+
+/* ---------- ШАПКА ---------- */
+
+header{
+
+    background:black;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:25px 70px;
+
+    position:sticky;
+
+    top:0;
+
+}
+
+.logo{
+
+    font-size:38px;
+
+    color:#39ff14;
+
+    font-weight:bold;
+
+}
+
+nav{
+
+    display:flex;
+
+    gap:50px;
+
+}
+
+nav a{
+
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:#39ff14;
+
+}
+
+/* ---------- HERO ---------- */
+
+.hero{
+
+    text-align:center;
+
+    padding:120px 20px;
+
+}
+
+.hero h1{
+
+    font-size:140px;
+
+    color:#39ff14;
+
+    letter-spacing:15px;
+
+}
+
+.hero p{
+
+    margin-top:20px;
+
+    font-size:24px;
+
+}
+/* ---------- О НАС ---------- */
+
+.about{
+
+    width:90%;
+    margin:100px auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:60px;
+
+}
+
+.about-text{
+
+    flex:1;
+
+}
+
+.about-text h2{
+
+    color:#39ff14;
+
+    font-size:42px;
+
+    margin-bottom:30px;
+
+}
+
+.about-text p{
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    margin-bottom:20px;
+
+}
+
+.about-image{
+
+    flex:1;
+
+}
+
+.about-image img{
+
+    border-radius:20px;
+
+}
+
+
+/* ---------- МЕРОПРИЯТИЯ ---------- */
+
+.events{
+
+    width:90%;
+
+    margin:100px auto;
+
+    text-align:center;
+
+}
+
+.events h2{
+
+    color:#39ff14;
+
+    font-size:50px;
+
+    margin-bottom:50px;
+
+}
+
+.cards{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+}
+
+.card{
+
+    width:320px;
+
+    background:#111;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.card img{
+
+    width:100%;
+
+}
+
+/* ---------- КНОПКА ---------- */
+
+.button{
+
+    display:inline-block;
+
+    margin-top:50px;
+
+    background:#39ff14;
+
+    color:black;
+
+    padding:18px 45px;
+
+    border-radius:50px;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.button:hover{
+
+    background:white;
+
+}
+/* ---------- FAQ ---------- */
+
+.faq{
+
+    width:90%;
+
+    margin:100px auto;
+
+}
+
+.faq h2{
+
+    text-align:center;
+
+    color:#39ff14;
+
+    font-size:50px;
+
+    margin-bottom:15px;
+
+}
+
+.faq-subtitle{
+
+    text-align:center;
+
+    margin-bottom:50px;
+
+    color:#ccc;
+
+}
+
+.question{
+
+    background:#111;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    margin-bottom:25px;
+
+}
+
+.question h3{
+
+    color:#39ff14;
+
+    margin-bottom:15px;
+
+}
+
+.question p{
+
+    line-height:1.6;
+
+}
+
+/* ---------- FOOTER ---------- */
+
+footer{
+
+    background:black;
+
+    text-align:center;
+
+    padding:50px 20px;
+
+    margin-top:100px;
+
+}
+
+footer h2{
+
+    color:#39ff14;
+
+    font-size:42px;
+
+    margin-bottom:20px;
+
+}
+
+footer p{
+
+    margin:12px 0;
+
+}
+
+/* ---------- АДАПТАЦИЯ ---------- */
+
+@media(max-width:900px){
+
+    header{
+
+        flex-direction:column;
+
+        gap:20px;
+
+        padding:20px;
+
+    }
+
+    nav{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        gap:20px;
+
+    }
+
+    .hero h1{
+
+        font-size:80px;
+
+    }
+
+    .hero p{
+
+        font-size:18px;
+
+    }
+
+    .about{
+
+        flex-direction:column;
+
+    }
+
+    .about h2{
+
+        font-size:32px;
+
+    }
+
+    .events h2{
+
+        font-size:36px;
+
+    }
+
+    .faq h2{
+
+        font-size:36px;
+
+    }
+
+}
